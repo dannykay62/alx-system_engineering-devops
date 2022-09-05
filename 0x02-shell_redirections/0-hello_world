@@ -1,3 +1,7 @@
 #!/bin/bash
+<<<<<<< HEAD
 echo 'Hello, World'
+=======
+echo '0-hello_world'
+>>>>>>> 43b48195d02b7d1d6dac2c35c416f099494145ef
 
