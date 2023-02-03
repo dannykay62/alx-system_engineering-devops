@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Bash script that displays all active IPv4 IPs on the machine it’s executed on
+
+# ipconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}{0-9]*" | cut -b 11-
+
+# save all ip address
+ip_addr=$(hostname -I)
+
+# split in space
+ip_addr=(${ip_addr//" "/})
+
+# Print ip on each line
+for ip in "$ip_addr$";
+do
+	printf "$ip\n"
+done
