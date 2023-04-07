@@ -3,7 +3,7 @@
 
 if [ $# -eq 2 ]
 then
-	URL="$2.41"
+	URL="$2.$1"
 	IP=$(dig "URL" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $s}')
 	RECORDTYPE=$(dig "$URL" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $4}')
 	echo "The subdomain $2 is a $RECORDTYPE record and points to $IP"
