@@ -33,7 +33,7 @@ deafualts
 	errorfile 504 /etc/haproxy/errors/504.htp
 frontend front
 	bind *:80
-	bind *:443 ssl crt /etc/letsencrypt/live/www.dannykay.me
+	bind *:443 ssl crt /etc/letsencrypt/live/www.dairoeshop.tech/fullchain.pem
 	mode http
 	default_backend back
 backend back
