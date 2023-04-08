@@ -38,5 +38,5 @@ frontend front
 	default_backend back
 backend back
 	balance roundrobin
-	server 138920-web-01 54.175.160.60 check
-	server 138920-web-02 100.25.134.63 check
+	server 138920-web-01 54.175.160.60:80 check
+	server 138920-web-02 100.25.134.63:80 check
