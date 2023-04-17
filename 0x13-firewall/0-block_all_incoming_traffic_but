@@ -2,7 +2,7 @@
 # install the ufw firewall and setup a few rules on web-01
 # Configure ufw to block incoming traffic, except TCP ports: 22, 443, 80
 
-apt-get intall ufw
+sudo apt-get intall ufw
 sed -i 's/IPV6=.*/IPV=yes/' /etc/default/ufw
 ufw disable
 ufw enable
