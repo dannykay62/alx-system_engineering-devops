@@ -22,4 +22,5 @@
 -A ufw-before-input -i lo -j ACCEPT
 -A ufw-before-output -i lo -j ACCEPT
 
-
+# Do not delete the 'COMMIT' line otherwise these rules will not work
+COMMIT
