@@ -5,6 +5,7 @@ queries the Reddit API and returns the number of subscribers
 import requests
 
 def number_of_subscribers(subreddit):
+    """Querries the api"""
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
     headers = {"User-Agent": "Python/3.0 (ALX 0x16 task 0)"}
 
